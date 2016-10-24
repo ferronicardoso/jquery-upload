@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../jquery-upload.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#txtArquivo').Upload({
+                url: 'aspnet/upload.ashx'
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="file" name="txtArquivo" id="txtArquivo" multiple />
+    </div>
+</body>
+</html>
